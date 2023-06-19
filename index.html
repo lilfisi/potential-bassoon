@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
   <body>
+    <h1>Function</h1>
+    <p>This demonstrates a regular function, NOT an arrow function.</p>
+
+<p id="demo"></p>
+    <h2>Arrow function</h2>
+    <p>A demonstration of a simple arrow function.</p>
+
+<p id="demo1"></p>
+    <h3>Arrow Function</h3>
+   <h4>Implicit Return</h4>
+
+<p>The arrow function expects a return value, and returns the value by default, without the <strong>return</strong> keyword.</p>
+
+<p id="demo"></p>
+  
     <script>
-    class Car {
-      constructor (name){
-      this.brand=name;
+    hello = function() {
+      return "Hello world!";
     }
-      present() {
-        return "I have a " + this.brand}
+      hello = () => {
+        return "Hello world!"
       }
-      class Model extends Car {
-        constructor (name, mod) {
-          super(name)
-          this.model=mod
-        }
-        show() {return this.present () + ',it is a ' + this.model
-               }
-      }
-        const mycar=new Model("Ford","Mustang");
-      document.write (mycar.show());
+      hello = () => "Hello world!"
+      document.getElementById("demo").innerHTML = hello();
+      document.getElementById("demo1").innerHTML = hello();
+      document.getElementById("demo3").innerHTML = hello();
       
-     
     </script>
   </body>
-</html>
+</html
